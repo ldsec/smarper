@@ -10,7 +10,10 @@ This project is organized as follows:
 - `ML/data/`: data set of runtime permission decisions per user.
 - `ML/gpml/`: implementation of Gaussian Processes ([GPML toolbox](http://www.gaussianprocess.org/gpml/code/matlab/doc/)).
 - `ML/prettyPlot/`: wrapper to plot figures.
-- `ML/run_exp.m/`: experiment to plot Mean Absolute Error (MAE) and Incorrect Classification Rate (ICR) vs Percentage of decisions used. We consider the following models: ZeroR_t, Bayesian Linear Regression, Gaussian Process with Squared Exponential Kernel (GP-SE), decision tree (D. Tree), and support vector machines (SVM).
+- `ML/run_exp.m/`: experiment to plot Mean Absolute Error (MAE) and Incorrect Classification Rate (ICR) vs Percentage of decisions used (Fig. 6(a) and 6(b) of the paper [1]). We consider the following models: ZeroR_t, Bayesian Linear Regression, Gaussian Process with Squared Exponential Kernel (GP-SE), decision tree (D. Tree), and support vector machines (SVM).
+- `ML/mae_for_users.m/`: experiment to show that "context reduces the # of mistakes", in which we plot the Error histograms for BLR, Static Policies, and ZeroR_t (Fig. 6(c) of the paper). To show that "context improve accuracy across users", we plot the MAE obtained by the baselines and SVM versus those obtained by our BLR model (Fig. 7 of the paper [1]). Each point corresponds to the MAE of a participant.
+- `ML/model_comparison.m/`: experiment to compare models with different input features (Fig. 8 of the paper [1]). 
+
 
 # Getting started
 To use the code of this repository, you need to install Matlab with the [Statistics and Machine Learning toolbox](https://www.mathworks.com/help/stats/?requestedDomain=www.mathworks.com&nocookie=true). 
@@ -22,7 +25,7 @@ For more details about the SmarPer project, refer to the [research paper](https:
 
 # Research
 The research behind the SmarPer Project was published in the following paper:
-- Katarzyna Olejnik, Italo Dacosta, Joana Soares Machado, Kévin Huguenin, Mohammad Emtiyaz Khan, Jean-Pierre Hubaux. SmarPer: Context-Aware and Automatic Runtime-Permissions for Mobile Devices. In Proceedings of the 38th IEEE Symposium on Security and Privacy (S&P), San Jose, CA, United States, May 2017.
+- [1] Katarzyna Olejnik, Italo Dacosta, Joana Soares Machado, Kévin Huguenin, Mohammad Emtiyaz Khan, Jean-Pierre Hubaux. SmarPer: Context-Aware and Automatic Runtime-Permissions for Mobile Devices. In Proceedings of the 38th IEEE Symposium on Security and Privacy (S&P), San Jose, CA, United States, May 2017.
 
 # License
 SmarPer and [XPrivacy](https://github.com/M66B/XPrivacy) are released under the GPLv3 License.
