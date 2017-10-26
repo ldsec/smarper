@@ -18,7 +18,7 @@ This project is organized as follows:
 # Getting started
 To use the code of this repository, you need to install Matlab with the [Statistics and Machine Learning toolbox](https://www.mathworks.com/help/stats/?requestedDomain=www.mathworks.com&nocookie=true). 
 
-Note: We provide a dummy data set in this repository to test the Machine Learning framework. If you are interested in reproducing our results, please e-mail smarper@epfl.ch to obtain the data set with runtime permission decisions.
+Note: We provide a dummy data set in this repository to test the Machine Learning framework. If you are interested in reproducing our results, please e-mail smarper@epfl.ch to obtain the data set with runtime permission decisions and the data set with static policies.
 
 # Documentation
 For more details about the SmarPer project, refer to the [research paper](https://hal.archives-ouvertes.fr/hal-01489684) and the [SmarPer website](https://spism.epfl.ch/smarper/).
