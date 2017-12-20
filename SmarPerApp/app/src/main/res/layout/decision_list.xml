@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        //Decisions
+        <RadioGroup
+            android:id="@+id/decision_radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/allow"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginBottom="3dp"
+                android:text="Allow"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+            <RadioButton android:id="@+id/obfuscate"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginBottom="3dp"
+                android:text="Obfuscate"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+            <RadioButton android:id="@+id/deny"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginBottom="3dp"
+                android:text="Deny"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>

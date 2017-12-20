@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityMain" >
+
+    <android.support.v7.widget.Toolbar
+       android:id="@+id/widgetToolbar"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="?attr/colorPrimary"
+       android:minHeight="?attr/actionBarSize" />
+
+
+    <!--<LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:paddingBottom="@dimen/activity_vertical_margin"
+           android:paddingLeft="@dimen/activity_horizontal_margin"
+           android:paddingTop="@dimen/activity_vertical_margin"
+           android:weightSum="1">
+
+
+                       android:layout_height="wrap_content"
+                                   android:layout_width="fill_parent"
+
+
+           -->
+
+        <LinearLayout android:id="@+id/LinearLayout01"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:weightSum="1">
+
+       <!-- Title -->
+
+
+
+        <!--<RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_horizontal_margin" >
+
+            <TextView
+                android:id="@+id/tvStats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textAppearance="?android:attr/textAppearanceSmall" />-->
+
+        <!-- <ProgressBar
+             android:id="@+id/pbFilter"
+             style="?android:attr/progressBarStyleSmall"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:visibility="gone" />
+
+</RelativeLayout>-->
+
+
+<!-- Progress
+
+     <View
+         android:id="@+id/vProgressEmpty"
+         android:layout_width="match_parent"
+         android:layout_height="1dip"
+         android:layout_marginBottom="0dip"
+         android:layout_marginRight="@dimen/activity_horizontal_margin"
+         android:background="@android:color/darker_gray" />-->
+
+
+        <!--<Button
+            android:id="@+id/btnOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="120dip"></Button>-->
+
+
+          <!-- KO <View
+            android:id="@+id/vProgressFull"
+            android:layout_width="0dip"
+            android:layout_height="3dip"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:background="?attr/colorAccent" /> -->
+
+            
+
+            <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Usage Data"
+        android:id="@+id/usagedata"
+        android:layout_gravity="center_horizontal"
+        android:width="140dip"/>
+
+     <Button
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="wrap_content"
+         android:layout_height="60dp"
+         android:text="Data Upload Status"
+         android:id="@+id/dataupload"
+         android:layout_gravity="center_horizontal"
+         android:width="140dip"/>
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="Configuration"
+                android:id="@+id/config"
+                android:layout_gravity="center_horizontal"
+                android:width="140dip"/>
+
+            <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Clear the Cache"
+        android:id="@+id/clearcache"
+        android:layout_gravity="center_horizontal"
+        android:width="140dip"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Tutorial"
+        android:id="@+id/tutorial"
+        android:layout_gravity="center_horizontal"
+        android:width="140dip"/>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="About SmarPer"
+                android:id="@+id/about_smarper"
+                android:layout_gravity="center_horizontal"
+                android:width="140dip"/>
+
+            <!-- KO: These textviews show the label for the user id and the user id itself. -->
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/user_id_label"
+                android:text="Your user id is: "
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:width="120dp"/>
+
+            <TextView
+                style="?android:attr/textAppearanceLarge"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/user_id_value"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:width="180dp"/>
+
+
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".MainActivity">
+
+   <android.support.v7.widget.Toolbar
+        android:id="@+id/widgetToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/stats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Allow/Obfuscate/Deny:"
+        android:layout_marginLeft="5dip"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@id/widgetToolbar"/>
+
+    <TextView
+        android:id="@+id/counts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="0/0/0"
+        android:layout_marginRight="5dip"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@id/widgetToolbar"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="2dip"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@id/counts"/>
+
+    <ListView android:id="@+id/simple_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:id="@+id/switch1"
+        android:checked="false"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/counts"
+        android:layout_toStartOf="@+id/counts"
+        android:layout_alignBottom="@+id/widgetToolbar" />
+
+</RelativeLayout>

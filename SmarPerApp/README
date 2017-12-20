@@ -1,1 +1,20 @@
-In progress
+---- SmarPer Android App ---
+
+SmarPer prototype in Android, based on XPrivacy. This version ONLY performs
+collection of contextual features (e.g., location, time, app name) and data 
+obfuscation for three data types/permissions (i.e., contacts, location, and 
+storage). This version DOES NOT performs automatic permission decisions based on
+machine learning (work in progress). 
+
+Tested on Android 4.4 and 6.0
+
+Requires rooted phone (see XPrivary requirements https://github.com/M66B/XPrivacy)
+
+Note: This is experimental code provided "as is" without any warranty of any 
+kind. We have tested SmarPer to the best of our ability on several popular device
+models from different manufacturers. SmarPer is based on XPrivacy, which has been 
+shown to be stable software and is used by thousands of users. However, we cannot 
+take any responsibility if your device malfunctions as a result of installing 
+and using SmarPer. We recommend that you back up your data before testing 
+SmarPer Android app. 
+

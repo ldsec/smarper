@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--Decision-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="Decision"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="6dp"
+            android:background="#888888" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_marginLeft="6dip"
+                android:src="@drawable/allow" />
+
+            <CheckBox
+                android:id="@+id/decision_allow"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginLeft="3dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Allow"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_marginLeft="6dip"
+                android:src="@drawable/obfuscate"  />
+
+            <CheckBox
+                android:id="@+id/decision_obfuscate"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginLeft="3dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Obfuscate"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_marginLeft="6dip"
+                android:src="@drawable/deny" />
+
+            <CheckBox
+                android:id="@+id/decision_deny"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginLeft="3dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Deny"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <!--Decision type-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="Decision Type"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="6dp"
+            android:background="#888888" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_marginLeft="6dip"
+                android:src="@drawable/stat" />
+
+            <CheckBox
+                android:id="@+id/decision_type_static"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginLeft="3dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Static"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_marginLeft="6dip"
+                android:src="@drawable/user"  />
+            <CheckBox
+                android:id="@+id/decision_type_user"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginLeft="3dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="User"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_marginLeft="6dip"
+                android:src="@drawable/user_cache"  />
+            <CheckBox
+                android:id="@+id/decision_type_user_cached"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginLeft="3dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="User Cached"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_marginLeft="6dip"
+                android:src="@drawable/user_modified" />
+            <CheckBox
+                android:id="@+id/decision_type_user_modified"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginLeft="3dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="User Modified"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_marginLeft="6dip"
+                android:src="@drawable/timeout" />
+            <CheckBox
+                android:id="@+id/decision_type_timeout"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginLeft="3dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Timeout"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+            <ImageView
+                android:layout_width="24dip"
+                android:layout_height="24dip"
+                android:layout_marginLeft="6dip"
+                android:src="@drawable/system" />
+
+            <CheckBox
+                android:id="@+id/decision_type_system"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:layout_marginLeft="3dip"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="System"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+        </LinearLayout>-->
+
+
+        <!--Time-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="Time"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="6dp"
+            android:background="#888888" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:orientation="vertical">
+            <RadioButton android:id="@+id/past_hour"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:text="Past Hour"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+            <RadioButton android:id="@+id/today"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:text="Today"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+            <RadioButton android:id="@+id/past_day"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:text="Past Day"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+            <RadioButton android:id="@+id/default_time"
+                android:layout_width="wrap_content"
+                android:layout_height="24dip"
+                android:text="Default"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+        </RadioGroup>
+
+
+        <!--Category-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="Category"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="6dp"
+            android:background="#888888" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/app_category_cont">
+        </LinearLayout>
+
+
+        <!--App-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="Apps"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="6dp"
+            android:background="#888888" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/app_cont">
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

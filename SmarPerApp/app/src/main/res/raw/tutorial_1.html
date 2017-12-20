@@ -1,0 +1,37 @@
+<html>
+<!-- Obfuscation -->
+Below, the meaning of <b>allow, obfuscate, and deny</b> is explained for each private data category:
+<br><br>
+<h3>Contacts</h3>
+<ul>
+    <li><b>Allow:</b> Allows access to all contact info requested by the app. </li>
+    <li><b>Obfuscate:</b> Allows access to <b>contact names, phone numbers, email addresses, and postal addresses</b> only: <br><br><center><img src="contacts_obfuscation_example.png" width="200"></center> <br><br></li>
+    <li><b>Deny:</b> Denies access and returns no contact data to the app. </li>
+</ul>
+<h3>Location</h3>
+<ul>
+    <li><b>Allow:</b> Allows access to your location.</li>
+    <li><b>Obfuscate:</b> Returns an approximate location: <br><br><center><img src="location_obfuscation_example.png" width="150"></center><br><br>The location of the center of the current square you are in gets returned.<br><br></li>
+    <li><b>Deny:</b> Returns a fake location. </li>
+</ul>
+<!-- <h3>Camera</h3>
+<ul>
+    <li><b>Allow:</b> Allows access to the camera.</li>
+    <li><b>Obfuscate:</b> Allows access to the camera, but reduces resolution of returned images: <br><br><center><img src="camera_obfuscation_example.png" width="200"></center> <br><br></li>
+    <li><b>Deny:</b> Returns black images. </li>
+</ul>
+
+-->
+<h3>Storage</h3>
+<ul>
+    <li><b>Allow:</b> Allows access to your sdcard. </li>
+    <li><b>Obfuscate:</b> Allows access to your sdcard, <b><i>except</i> for your public directories (Pictures, Music, Videos, etc):<br><br><center><img src="storage_obfuscation_example.png" width="200"></center>  <br><br><font color="red">NOTE:</font></b> If you suspect an app needs <b>write access</b> to these directories (for example, to save a photo) you must <b>allow Storage.</b><br><br></li>
+    <li><b>Deny:</b> Denies all access to sdcard (i.e. sdcard unmounted). </li>
+</ul>
+
+<!-- Footer -->
+<br><br><center><i>
+    Page 2/4
+    <br><br></i></center>
+
+</html>
